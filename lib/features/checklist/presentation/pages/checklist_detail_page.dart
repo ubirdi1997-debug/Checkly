@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_haptic_feedback/flutter_haptic_feedback.dart';
 import 'package:uuid/uuid.dart';
 import '../../../../core/data/models/checklist.dart';
 import '../../../../core/data/models/checklist_item.dart';
@@ -68,7 +68,7 @@ class _ChecklistDetailPageState extends ConsumerState<ChecklistDetailPage> {
 
     _saveChecklist();
     _itemController.clear();
-    FlutterHapticFeedback.lightImpact();
+    HapticFeedback.lightImpact();
   }
 
   void _toggleItem(String itemId) {
@@ -81,7 +81,7 @@ class _ChecklistDetailPageState extends ConsumerState<ChecklistDetailPage> {
     });
 
     _saveChecklist();
-    FlutterHapticFeedback.selectionClick();
+    HapticFeedback.selectionClick();
   }
 
   void _deleteItem(String itemId) {
@@ -100,7 +100,7 @@ class _ChecklistDetailPageState extends ConsumerState<ChecklistDetailPage> {
     });
 
     _saveChecklist();
-    FlutterHapticFeedback.mediumImpact();
+    HapticFeedback.mediumImpact();
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
@@ -170,7 +170,7 @@ class _ChecklistDetailPageState extends ConsumerState<ChecklistDetailPage> {
     });
 
     _saveChecklist();
-    FlutterHapticFeedback.lightImpact();
+    HapticFeedback.lightImpact();
   }
 
   void _showResetDialog() {
@@ -194,7 +194,7 @@ class _ChecklistDetailPageState extends ConsumerState<ChecklistDetailPage> {
                 });
                 _saveChecklist();
                 Navigator.pop(context);
-                FlutterHapticFeedback.mediumImpact();
+                HapticFeedback.mediumImpact();
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(
                     content: Text('Checklist reset'),

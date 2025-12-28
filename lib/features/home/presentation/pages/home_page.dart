@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_haptic_feedback/flutter_haptic_feedback.dart';
 import '../providers/checklist_provider.dart';
-import '../../checklist/presentation/pages/checklist_detail_page.dart';
-import '../../settings/presentation/pages/settings_page.dart';
+import '../../../checklist/presentation/pages/checklist_detail_page.dart';
+import '../../../settings/presentation/pages/settings_page.dart';
 import '../widgets/checklist_card.dart';
 import '../widgets/empty_state.dart';
 
@@ -114,7 +114,7 @@ class _HomePageState extends ConsumerState<HomePage> {
   }
 
   void _handleLongPress(String checklistId, bool isPinned) {
-    FlutterHapticFeedback.mediumImpact();
+    HapticFeedback.mediumImpact();
     
     showModalBottomSheet(
       context: context,
@@ -191,7 +191,7 @@ class _HomePageState extends ConsumerState<HomePage> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const SettingsPage()),
+                MaterialPageRoute(builder: (context) => SettingsPage()),
               );
             },
             tooltip: 'Settings',
