@@ -31,21 +31,30 @@ A simple, offline-first checklist app focused on reusable lists, daily routines,
 flutter pub get
 ```
 
-3. Generate Hive adapters:
+3. Generate app icons from `assets/icon.png`:
+```bash
+flutter pub run flutter_launcher_icons
+```
+
+4. Generate Hive adapters:
 ```bash
 flutter pub run build_runner build --delete-conflicting-outputs
 ```
 
-4. Run the app:
+5. Run the app:
 ```bash
 flutter run
 ```
 
 ### Building for Release
 
+The app is configured with signing keys. To build a signed release APK:
+
 ```bash
 flutter build apk --release
 ```
+
+The signing configuration is in `android/key.properties` and uses the keystore at `assets/key.jks`.
 
 ## Architecture
 
