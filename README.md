@@ -71,6 +71,29 @@ This app requires **NO permissions** - it's completely offline and stores all da
 
 Copyright © MINORMEND CONSTRUCTION PRIVATE LIMITED
 
+## Publishing to Play Store
+
+For publishing to Google Play Store, see the following documents:
+
+- **README_PUBLISHING.md** - Complete publishing guide
+- **PLAY_STORE_CHECKLIST.md** - Submission checklist
+- **PLAY_STORE_LISTING.md** - Store listing content
+- **PRIVACY_POLICY.md** - Privacy policy (must be hosted online)
+- **PRIVACY_POLICY.html** - HTML version for easy hosting
+- **TERMS_OF_SERVICE.md** - Terms of service
+
+### Quick Build for Play Store
+
+Build App Bundle (recommended):
+```bash
+flutter build appbundle --release
+```
+
+Build APK (alternative):
+```bash
+flutter build apk --release
+```
+
 ## Support
 
 For support, email: minormendcon1997@gmail.com
