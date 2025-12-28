@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/theme_provider.dart';
 
@@ -16,65 +17,104 @@ class SettingsPage extends ConsumerWidget {
       ),
       body: ListView(
         children: [
-          const Padding(
-            padding: EdgeInsets.all(16.0),
-            child: Text(
-              'Theme',
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w500,
-              ),
+          Card(
+            margin: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+                  child: Row(
+                    children: [
+                      Icon(Icons.palette, color: Theme.of(context).colorScheme.primary),
+                      const SizedBox(width: 8),
+                      Text(
+                        'Theme',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          color: Theme.of(context).colorScheme.primary,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                RadioListTile<ThemeMode>(
+                  title: const Text('System Default'),
+                  subtitle: const Text('Follow device theme'),
+                  value: ThemeMode.system,
+                  groupValue: themeMode,
+                  onChanged: (value) {
+                    if (value != null) {
+                      themeNotifier.setThemeMode(value);
+                      HapticFeedback.selectionClick();
+                    }
+                  },
+                ),
+                RadioListTile<ThemeMode>(
+                  title: const Text('Light Mode'),
+                  subtitle: const Text('Always use light theme'),
+                  value: ThemeMode.light,
+                  groupValue: themeMode,
+                  onChanged: (value) {
+                    if (value != null) {
+                      themeNotifier.setThemeMode(value);
+                      HapticFeedback.selectionClick();
+                    }
+                  },
+                ),
+                RadioListTile<ThemeMode>(
+                  title: const Text('Dark Mode'),
+                  subtitle: const Text('Always use dark theme'),
+                  value: ThemeMode.dark,
+                  groupValue: themeMode,
+                  onChanged: (value) {
+                    if (value != null) {
+                      themeNotifier.setThemeMode(value);
+                      HapticFeedback.selectionClick();
+                    }
+                  },
+                ),
+              ],
             ),
           ),
-          RadioListTile<ThemeMode>(
-            title: const Text('System Default'),
-            value: ThemeMode.system,
-            groupValue: themeMode,
-            onChanged: (value) {
-              if (value != null) {
-                themeNotifier.setThemeMode(value);
-              }
-            },
-          ),
-          RadioListTile<ThemeMode>(
-            title: const Text('Light Mode'),
-            value: ThemeMode.light,
-            groupValue: themeMode,
-            onChanged: (value) {
-              if (value != null) {
-                themeNotifier.setThemeMode(value);
-              }
-            },
-          ),
-          RadioListTile<ThemeMode>(
-            title: const Text('Dark Mode'),
-            value: ThemeMode.dark,
-            groupValue: themeMode,
-            onChanged: (value) {
-              if (value != null) {
-                themeNotifier.setThemeMode(value);
-              }
-            },
-          ),
-          const Divider(),
-          const Padding(
-            padding: EdgeInsets.all(16.0),
-            child: Text(
-              'About',
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w500,
-              ),
+          Card(
+            margin: const EdgeInsets.symmetric(horizontal: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+                  child: Row(
+                    children: [
+                      Icon(Icons.info_outline, color: Theme.of(context).colorScheme.primary),
+                      const SizedBox(width: 8),
+                      Text(
+                        'About',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          color: Theme.of(context).colorScheme.primary,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                ListTile(
+                  leading: const Icon(Icons.business),
+                  title: const Text('Company Name'),
+                  subtitle: const Text('HARMONY UNITECH PRIVATE LIMITED'),
+                ),
+                const Divider(height: 1),
+                ListTile(
+                  leading: const Icon(Icons.email),
+                  title: const Text('Support Email'),
+                  subtitle: const Text('harmonyunitech1997@gmail.com'),
+                ),
+              ],
             ),
           ),
-          ListTile(
-            title: const Text('Company Name'),
-            subtitle: const Text('MINORMEND CONSTRUCTION PRIVATE LIMITED'),
-          ),
-          ListTile(
-            title: const Text('Support Email'),
-            subtitle: const Text('minormendcon1997@gmail.com'),
-          ),
+          const SizedBox(height: 16),
         ],
       ),
     );

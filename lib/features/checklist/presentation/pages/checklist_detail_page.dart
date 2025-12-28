@@ -5,6 +5,7 @@ import 'package:uuid/uuid.dart';
 import '../../../../core/data/models/checklist.dart';
 import '../../../../core/data/models/checklist_item.dart';
 import '../../../../core/data/storage/checklist_storage.dart';
+import '../../../../core/services/notification_service.dart';
 import '../../../home/presentation/providers/checklist_provider.dart';
 import '../widgets/checklist_item_tile.dart';
 
@@ -78,10 +79,55 @@ class _ChecklistDetailPageState extends ConsumerState<ChecklistDetailPage> {
       final item = _checklist!.items.firstWhere((i) => i.id == itemId);
       item.isCompleted = !item.isCompleted;
       _checklist!.lastUpdated = DateTime.now();
+      
+      // Cancel notification if item is completed
+      if (item.isCompleted && item.hasReminder) {
+        final notificationId = NotificationService.getNotificationId(item.id);
+        NotificationService.cancelNotification(notificationId);
+      }
     });
 
     _saveChecklist();
     HapticFeedback.selectionClick();
+  }
+
+  void _setReminder(String itemId, DateTime? reminderTime) {
+    if (_checklist == null) return;
+
+    setState(() {
+      final item = _checklist!.items.firstWhere((i) => i.id == itemId);
+      final oldReminderTime = item.reminderTime;
+      item.reminderTime = reminderTime;
+      _checklist!.lastUpdated = DateTime.now();
+      
+      // Cancel old notification if exists
+      if (oldReminderTime != null) {
+        final notificationId = NotificationService.getNotificationId(item.id);
+        NotificationService.cancelNotification(notificationId);
+      }
+      
+      // Schedule new notification if time is set
+      if (reminderTime != null && !item.isCompleted) {
+        final notificationId = NotificationService.getNotificationId(item.id);
+        NotificationService.scheduleReminder(
+          id: notificationId,
+          title: _checklist!.title,
+          body: item.text,
+          scheduledTime: reminderTime,
+        );
+        HapticFeedback.mediumImpact();
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Reminder set for ${TimeOfDay.fromDateTime(reminderTime).format(context)}'),
+            duration: const Duration(seconds: 2),
+          ),
+        );
+      } else if (reminderTime == null) {
+        HapticFeedback.lightImpact();
+      }
+    });
+
+    _saveChecklist();
   }
 
   void _deleteItem(String itemId) {
@@ -89,6 +135,12 @@ class _ChecklistDetailPageState extends ConsumerState<ChecklistDetailPage> {
 
     final item = _checklist!.items.firstWhere((i) => i.id == itemId);
     final itemText = item.text;
+
+    // Cancel notification if exists
+    if (item.hasReminder) {
+      final notificationId = NotificationService.getNotificationId(item.id);
+      NotificationService.cancelNotification(notificationId);
+    }
 
     setState(() {
       _checklist!.items.removeWhere((i) => i.id == itemId);
@@ -271,6 +323,7 @@ class _ChecklistDetailPageState extends ConsumerState<ChecklistDetailPage> {
                   canReorder: canReorder,
                   onToggle: () => _toggleItem(item.id),
                   onDelete: () => _deleteItem(item.id),
+                  onReminderSet: (reminderTime) => _setReminder(item.id, reminderTime),
                 );
               },
             ),

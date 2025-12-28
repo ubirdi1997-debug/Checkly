@@ -58,7 +58,7 @@ You must host the privacy policy online. Options:
 ## Support
 
 For questions about publishing:
-- Email: minormendcon1997@gmail.com
+- Email: harmonyunitech1997@gmail.com
 - Google Play Console Help: https://support.google.com/googleplay/android-developer
 
 ## Next Steps After Publishing

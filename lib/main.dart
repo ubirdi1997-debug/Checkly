@@ -4,6 +4,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'core/data/models/checklist_item.dart';
 import 'core/data/models/checklist.dart';
 import 'core/data/storage/checklist_storage.dart';
+import 'core/services/notification_service.dart';
 import 'core/theme/app_theme.dart';
 import 'features/home/presentation/pages/home_page.dart';
 import 'features/settings/presentation/providers/theme_provider.dart';
@@ -20,6 +21,9 @@ void main() async {
   
   // Initialize storage
   await ChecklistStorage.init();
+  
+  // Initialize notifications
+  await NotificationService.initialize();
   
   runApp(
     const ProviderScope(

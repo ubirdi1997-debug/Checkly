@@ -69,7 +69,7 @@ This app requires **NO permissions** - it's completely offline and stores all da
 
 ## License
 
-Copyright © MINORMEND CONSTRUCTION PRIVATE LIMITED
+Copyright © HARMONY UNITECH PRIVATE LIMITED
 
 ## Publishing to Play Store
 
@@ -96,4 +96,4 @@ flutter build apk --release
 
 ## Support
 
-For support, email: minormendcon1997@gmail.com
+For support, email: harmonyunitech1997@gmail.com

@@ -16,11 +16,15 @@ class ChecklistItem extends HiveObject {
   @HiveField(3)
   int order;
 
+  @HiveField(4)
+  DateTime? reminderTime;
+
   ChecklistItem({
     required this.id,
     required this.text,
     this.isCompleted = false,
     required this.order,
+    this.reminderTime,
   });
 
   ChecklistItem copyWith({
@@ -28,13 +32,21 @@ class ChecklistItem extends HiveObject {
     String? text,
     bool? isCompleted,
     int? order,
+    DateTime? reminderTime,
   }) {
     return ChecklistItem(
       id: id ?? this.id,
       text: text ?? this.text,
       isCompleted: isCompleted ?? this.isCompleted,
       order: order ?? this.order,
+      reminderTime: reminderTime ?? this.reminderTime,
     );
   }
+
+  bool get hasReminder => reminderTime != null;
+  
+  bool get isReminderDue => reminderTime != null && 
+      reminderTime!.isBefore(DateTime.now()) && 
+      !isCompleted;
 }
 

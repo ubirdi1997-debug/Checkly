@@ -29,17 +29,34 @@ class _HomePageState extends ConsumerState<HomePage> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Create Checklist'),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
+        title: Row(
+          children: [
+            Icon(
+              Icons.add_circle_outline,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+            const SizedBox(width: 12),
+            const Text('Create Checklist'),
+          ],
+        ),
         content: TextField(
           controller: textController,
           autofocus: true,
-          decoration: const InputDecoration(
+          decoration: InputDecoration(
             hintText: 'Enter checklist title',
-            border: OutlineInputBorder(),
+            prefixIcon: const Icon(Icons.title),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            filled: true,
           ),
           onSubmitted: (value) {
             if (value.trim().isNotEmpty) {
               ref.read(checklistListProvider.notifier).createChecklist(value.trim());
+              HapticFeedback.mediumImpact();
               Navigator.pop(context);
             }
           },
@@ -49,14 +66,16 @@ class _HomePageState extends ConsumerState<HomePage> {
             onPressed: () => Navigator.pop(context),
             child: const Text('Cancel'),
           ),
-          TextButton(
+          FilledButton.icon(
             onPressed: () {
               if (textController.text.trim().isNotEmpty) {
                 ref.read(checklistListProvider.notifier).createChecklist(textController.text.trim());
+                HapticFeedback.mediumImpact();
                 Navigator.pop(context);
               }
             },
-            child: const Text('Create'),
+            icon: const Icon(Icons.check, size: 18),
+            label: const Text('Create'),
           ),
         ],
       ),
@@ -265,9 +284,10 @@ class _HomePageState extends ConsumerState<HomePage> {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton.extended(
         onPressed: _showCreateDialog,
-        child: const Icon(Icons.add),
+        icon: const Icon(Icons.add),
+        label: const Text('New Checklist'),
       ),
     );
   }

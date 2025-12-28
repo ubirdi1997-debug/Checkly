@@ -51,11 +51,11 @@ Download Checkly today and experience the simplicity of focused productivity.
 - All data stored locally on your device
 
 **Support:**
-For questions or support, contact: minormendcon1997@gmail.com
+For questions or support, contact: harmonyunitech1997@gmail.com
 
 ---
 
-*Developed by MINORMEND CONSTRUCTION PRIVATE LIMITED*
+*Developed by HARMONY UNITECH PRIVATE LIMITED*
 
 ## Category
 **Tools / Productivity**
@@ -111,7 +111,7 @@ For initial release:
 **Free** - The app is free to download and use.
 
 ## Contact Information
-- **Email:** minormendcon1997@gmail.com
+- **Email:** harmonyunitech1997@gmail.com
 - **Website:** (Optional - not required)
 - **Privacy Policy URL:** (You'll need to host the privacy policy online and provide the URL)
 
