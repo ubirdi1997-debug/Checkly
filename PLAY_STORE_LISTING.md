@@ -111,7 +111,7 @@ For initial release:
 **Free** - The app is free to download and use.
 
 ## Contact Information
-- **Email:** masteyesseeds@gmail.com
+- **Email:** masteyesseeds my@gmail.com
 - **Website:** (Optional - not required)
 - **Privacy Policy URL:** (You'll need to host the privacy policy online and provide the URL)
 
