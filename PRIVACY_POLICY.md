@@ -2,8 +2,8 @@
 
 **Last Updated:** December 28, 2024
 
-**Developer:** HARMONY UNITECH PRIVATE LIMITED  
-**Contact Email:** harmonyunitech1997@gmail.com
+**Developer:** MAST EYES SEEDS PRIVATE LIMITED  
+**Contact Email:** masteyesseeds@gmail.com
 
 ## Introduction
 
@@ -65,8 +65,8 @@ Since we do not collect or store your personal data, there is no data for us to 
 
 If you have any questions about this Privacy Policy, please contact us at:
 
-**Email:** harmonyunitech1997@gmail.com  
-**Company:** HARMONY UNITECH PRIVATE LIMITED
+**Email:** masteyesseeds@gmail.com  
+**Company:** MAST EYES SEEDS PRIVATE LIMITED
 
 ## Compliance
 

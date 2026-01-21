@@ -41,7 +41,7 @@ Use this checklist to ensure you have everything ready before submitting to the 
 ### ✅ Store Listing Details
 - [x] Category: Tools / Productivity
 - [x] Tags/Keywords: Listed in PLAY_STORE_LISTING.md
-- [x] Contact email: harmonyunitech1997@gmail.com
+- [x] Contact email: masteyesseeds@gmail.com
 - [ ] Support URL: Optional
 - [ ] Website: Optional
 

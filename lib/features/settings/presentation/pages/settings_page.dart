@@ -103,13 +103,13 @@ class SettingsPage extends ConsumerWidget {
                 ListTile(
                   leading: const Icon(Icons.business),
                   title: const Text('Company Name'),
-                  subtitle: const Text('HARMONY UNITECH PRIVATE LIMITED'),
+                  subtitle: const Text('MAST EYES SEEDS PRIVATE LIMITED'),
                 ),
                 const Divider(height: 1),
                 ListTile(
                   leading: const Icon(Icons.email),
                   title: const Text('Support Email'),
-                  subtitle: const Text('harmonyunitech1997@gmail.com'),
+                  subtitle: const Text('masteyesseeds@gmail.com'),
                 ),
               ],
             ),

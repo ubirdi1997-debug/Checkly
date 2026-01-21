@@ -2,8 +2,8 @@
 
 **Last Updated:** December 28, 2024
 
-**Developer:** HARMONY UNITECH PRIVATE LIMITED  
-**Contact Email:** harmonyunitech1997@gmail.com
+**Developer:** MAST EYES SEEDS PRIVATE LIMITED  
+**Contact Email:** masteyesseeds@gmail.com
 
 ## Agreement to Terms
 
@@ -27,7 +27,7 @@ You agree not to:
 
 ## Intellectual Property
 
-The App, including its design, features, and functionality, is owned by HARMONY UNITECH PRIVATE LIMITED and is protected by copyright, trademark, and other intellectual property laws.
+The App, including its design, features, and functionality, is owned by MAST EYES SEEDS PRIVATE LIMITED and is protected by copyright, trademark, and other intellectual property laws.
 
 ## Data and Privacy
 
@@ -42,7 +42,7 @@ THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, E
 
 ## Limitation of Liability
 
-TO THE MAXIMUM EXTENT PERMITTED BY LAW, HARMONY UNITECH PRIVATE LIMITED SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, MAST EYES SEEDS PRIVATE LIMITED SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
 
 ## Updates and Modifications
 
@@ -63,8 +63,8 @@ These Terms shall be governed by and construed in accordance with the laws of In
 
 If you have any questions about these Terms, please contact us at:
 
-**Email:** harmonyunitech1997@gmail.com  
-**Company:** HARMONY UNITECH PRIVATE LIMITED
+**Email:** masteyesseeds@gmail.com  
+**Company:** MAST EYES SEEDS PRIVATE LIMITED
 
 ## Acknowledgment
 
