@@ -109,7 +109,13 @@ class SettingsPage extends ConsumerWidget {
                 ListTile(
                   leading: const Icon(Icons.email),
                   title: const Text('Support Email'),
-                  subtitle: const Text('masteyesseeds@gmail.com'),
+                  subtitle: const Text('masteyesseeds.com'),
+                ),
+                const Divider(height: 1),
+                ListTile(
+                  leading: const Icon(Icons.phone),
+                  title: const Text('Phone'),
+                  subtitle: const Text('+91 98141 42214'),
                 ),
               ],
             ),
