@@ -25,7 +25,7 @@ class _HomePageState extends ConsumerState<HomePage> {
 
   void _showCreateDialog() {
     final textController = TextEditingController();
-    
+
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -55,7 +55,9 @@ class _HomePageState extends ConsumerState<HomePage> {
           ),
           onSubmitted: (value) {
             if (value.trim().isNotEmpty) {
-              ref.read(checklistListProvider.notifier).createChecklist(value.trim());
+              ref
+                  .read(checklistListProvider.notifier)
+                  .createChecklist(value.trim());
               HapticFeedback.mediumImpact();
               Navigator.pop(context);
             }
@@ -69,7 +71,9 @@ class _HomePageState extends ConsumerState<HomePage> {
           FilledButton.icon(
             onPressed: () {
               if (textController.text.trim().isNotEmpty) {
-                ref.read(checklistListProvider.notifier).createChecklist(textController.text.trim());
+                ref
+                    .read(checklistListProvider.notifier)
+                    .createChecklist(textController.text.trim());
                 HapticFeedback.mediumImpact();
                 Navigator.pop(context);
               }
@@ -134,7 +138,7 @@ class _HomePageState extends ConsumerState<HomePage> {
 
   void _handleLongPress(String checklistId, bool isPinned) {
     HapticFeedback.mediumImpact();
-    
+
     showModalBottomSheet(
       context: context,
       builder: (context) => SafeArea(
@@ -142,7 +146,8 @@ class _HomePageState extends ConsumerState<HomePage> {
           mainAxisSize: MainAxisSize.min,
           children: [
             ListTile(
-              leading: Icon(isPinned ? Icons.push_pin : Icons.push_pin_outlined),
+              leading:
+                  Icon(isPinned ? Icons.push_pin : Icons.push_pin_outlined),
               title: Text(isPinned ? 'Unpin' : 'Pin'),
               onTap: () {
                 ref.read(checklistListProvider.notifier).togglePin(checklistId);
@@ -176,7 +181,9 @@ class _HomePageState extends ConsumerState<HomePage> {
           ),
           TextButton(
             onPressed: () {
-              ref.read(checklistListProvider.notifier).deleteChecklist(checklistId);
+              ref
+                  .read(checklistListProvider.notifier)
+                  .deleteChecklist(checklistId);
               Navigator.pop(context);
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
@@ -198,7 +205,7 @@ class _HomePageState extends ConsumerState<HomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Checkly'),
+        title: const Text('Checkly Lists'),
         actions: [
           IconButton(
             icon: const Icon(Icons.sort),
@@ -251,7 +258,8 @@ class _HomePageState extends ConsumerState<HomePage> {
                   )
                 : GridView.builder(
                     padding: const EdgeInsets.all(16),
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       crossAxisSpacing: 16,
                       mainAxisSpacing: 16,
@@ -292,4 +300,3 @@ class _HomePageState extends ConsumerState<HomePage> {
     );
   }
 }
-

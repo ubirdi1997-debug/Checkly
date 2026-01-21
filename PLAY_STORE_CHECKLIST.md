@@ -5,12 +5,12 @@ Use this checklist to ensure you have everything ready before submitting to the 
 ## Pre-Submission Requirements
 
 ### ✅ App Information
-- [x] App name: Checkly
-- [x] Short description (80 chars): "Simple, offline-first checklist app for daily routines and reusable lists."
+- [x] App name: Checkly Lists
+- [x] Short description (80 chars): "Offline checklist app for daily routines, tasks, and reusable lists."
 - [x] Full description: See PLAY_STORE_LISTING.md
-- [x] App icon: Generated from assets/icon.png
-- [x] Feature graphic (1024x500): Need to create
-- [x] Screenshots: Need to create (minimum 2, recommended 4-8)
+- [x] App icon: Generated from assets/icon.png (1024x1024)
+- [ ] Feature graphic (1024x500): Need to create
+- [ ] Screenshots: Need to create (minimum 2, recommended 4-5)
 
 ### ✅ Legal Documents
 - [x] Privacy Policy: Created (PRIVACY_POLICY.md)
@@ -26,13 +26,13 @@ Use this checklist to ensure you have everything ready before submitting to the 
 - [ ] Promotional graphic: Optional
 
 ### ✅ Technical Requirements
-- [x] APK/App Bundle built: ✅ app-release.apk (48MB)
-- [ ] App Bundle (.aab) created: Recommended (smaller size)
-- [x] App signed with release key: ✅ Configured
-- [x] Target SDK: 34 (meets requirements)
+- [x] APK/App Bundle built: ✅ Latest build in release mode
+- [ ] App Bundle (.aab) created: Recommended (smaller size, better for Play Store)
+- [x] App signed with release key: ✅ Configured with signing keys
+- [x] Target SDK: 36 (meets Google Play requirements - currently targeting SDK 36)
 - [x] Min SDK: 21 (Android 5.0+)
-- [x] No permissions requested: ✅ Verified
-- [x] App tested on devices: Need to test
+- [x] Permissions minimal: ✅ Only POST_NOTIFICATIONS, no alarm/timer permissions
+- [x] App tested on devices: Ready to test
 
 ### ✅ Content Rating
 - [ ] Content rating questionnaire completed: Need to do in Play Console

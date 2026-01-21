@@ -1,17 +1,17 @@
-# Terms of Service for Checkly
+# Terms of Service for Checkly Lists
 
-**Last Updated:** December 28, 2024
+**Last Updated:** January 21, 2026
 
 **Developer:** MAST EYES SEEDS PRIVATE LIMITED  
 **Contact Email:** masteyesseeds@gmail.com
 
 ## Agreement to Terms
 
-By downloading, installing, or using the Checkly mobile application (the "App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.
+By downloading, installing, or using the Checkly Lists mobile application (the "App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.
 
 ## Description of Service
 
-Checkly is an offline-first checklist application that allows users to create, manage, and organize checklists on their mobile devices. The App operates entirely offline and stores all data locally on your device.
+Checkly Lists is an offline-first checklist application that allows users to create, manage, and organize checklists on their mobile devices. The App operates entirely offline and stores all data locally on your device.
 
 ## Use of the App
 

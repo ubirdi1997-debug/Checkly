@@ -8,8 +8,9 @@ class NotificationService {
 
   static Future<void> initialize() async {
     tz.initializeTimeZones();
-    
-    const androidSettings = AndroidInitializationSettings('@mipmap/ic_launcher');
+
+    const androidSettings =
+        AndroidInitializationSettings('@mipmap/ic_launcher');
     const iosSettings = DarwinInitializationSettings();
     const initSettings = InitializationSettings(
       android: androidSettings,
@@ -28,7 +29,7 @@ class NotificationService {
   static Future<void> _requestPermissions() async {
     final androidPlugin = _notifications.resolvePlatformSpecificImplementation<
         AndroidFlutterLocalNotificationsPlugin>();
-    
+
     if (androidPlugin != null) {
       await androidPlugin.requestNotificationsPermission();
     }
@@ -56,7 +57,7 @@ class NotificationService {
 
     const androidDetails = AndroidNotificationDetails(
       'checkly_reminders',
-      'Checkly Reminders',
+      'Checkly Lists Reminders',
       channelDescription: 'Notifications for checklist item reminders',
       importance: Importance.high,
       priority: Priority.high,
@@ -99,4 +100,3 @@ class NotificationService {
     return itemId.hashCode.abs() % 2147483647; // Max int for notification ID
   }
 }
-

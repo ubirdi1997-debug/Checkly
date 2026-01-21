@@ -11,20 +11,20 @@ import 'features/settings/presentation/providers/theme_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
+
   // Initialize Hive
   await Hive.initFlutter();
-  
+
   // Register Hive adapters
   Hive.registerAdapter(ChecklistItemAdapter());
   Hive.registerAdapter(ChecklistAdapter());
-  
+
   // Initialize storage
   await ChecklistStorage.init();
-  
+
   // Initialize notifications
   await NotificationService.initialize();
-  
+
   runApp(
     const ProviderScope(
       child: ChecklyApp(),
@@ -38,9 +38,9 @@ class ChecklyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final themeMode = ref.watch(themeModeProvider);
-    
+
     return MaterialApp(
-      title: 'Checkly',
+      title: 'Checkly Lists',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
@@ -49,4 +49,3 @@ class ChecklyApp extends ConsumerWidget {
     );
   }
 }
-

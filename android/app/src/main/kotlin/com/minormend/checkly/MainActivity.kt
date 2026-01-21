@@ -1,4 +1,4 @@
-package com.checkly.app
+package com.checkly.lists
 
 import io.flutter.embedding.android.FlutterActivity
 

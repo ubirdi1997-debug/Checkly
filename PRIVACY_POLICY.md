@@ -1,13 +1,13 @@
-# Privacy Policy for Checkly
+# Privacy Policy for Checkly Lists
 
-**Last Updated:** December 28, 2024
+**Last Updated:** January 21, 2026
 
 **Developer:** MAST EYES SEEDS PRIVATE LIMITED  
 **Contact Email:** masteyesseeds@gmail.com
 
 ## Introduction
 
-Checkly ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information in our mobile application Checkly (the "App").
+Checkly Lists ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information in our mobile application Checkly Lists (the "App").
 
 ## Information We Collect
 
@@ -78,5 +78,5 @@ This Privacy Policy complies with:
 
 ---
 
-*This privacy policy is effective as of the date listed above and applies to all versions of the Checkly application.*
+*This privacy policy is effective as of the date listed above and applies to all versions of the Checkly Lists application.*
 

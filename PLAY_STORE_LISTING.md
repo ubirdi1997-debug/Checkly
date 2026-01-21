@@ -1,61 +1,64 @@
 # Google Play Store Listing Information
 
 ## App Name
-**Checkly**
+**Checkly Lists**
 
 ## Short Description (80 characters max)
-Simple, offline-first checklist app for daily routines and reusable lists.
+Offline checklist app for daily routines, tasks, and reusable lists.
 
 ## Full Description
 
-**Checkly - Your Simple Checklist Companion**
+**Checkly Lists - Your Simple Offline Checklist Companion**
 
-Checkly is a clean, minimal checklist app designed for clarity and reliability. Perfect for daily routines, task management, and organizing your life—all without the internet.
+Checkly Lists is a clean, minimal checklist app designed for clarity, simplicity, and reliability. Perfect for daily routines, task management, and organizing your life—all without the internet.
 
 **Key Features:**
 
-✅ **Fully Offline** - Works completely without internet. No accounts, no sign-in required.
+✅ **Fully Offline** - Works completely without internet. No accounts, no sign-in required. Your data stays on your device.
 
 ✅ **Reusable Checklists** - Create checklists once and reset them with one tap. Perfect for daily routines, weekly tasks, and repeatable workflows.
 
-✅ **Intuitive Organization** - Pin important checklists, search by name, and sort by your preference.
+✅ **Intuitive Organization** - Pin important checklists, search by name, and sort by your preference for easy access.
 
 ✅ **Easy Management** - Drag to reorder items, swipe to delete, and undo actions when needed.
 
-✅ **Clean Design** - Beautiful Material 3 interface with light and dark mode support. No clutter, no distractions.
+✅ **Clean Design** - Beautiful Material Design interface with light and dark mode support. No clutter, no distractions.
 
-✅ **Privacy First** - No ads, no tracking, no data collection. Everything stays on your device.
+✅ **Privacy First** - No ads, no tracking, no data collection, no analytics. Everything stays on your device.
 
-✅ **Zero Permissions** - The app doesn't require any device permissions. It's completely self-contained.
+✅ **Minimal Permissions** - The app only requests permission for notifications. It's completely self-contained and secure.
 
 **Perfect For:**
-- Daily morning/evening routines
-- Weekly task lists
-- Shopping lists
-- Travel checklists
-- Workout routines
+- Daily morning and evening routines
+- Weekly task lists and planning
+- Shopping lists and groceries
+- Travel packing checklists
+- Workout and fitness routines
 - Project task management
+- Habit tracking
 - Any repeatable checklist you need
 
-**Why Checkly?**
-In a world of complex apps with unnecessary features, Checkly focuses on what matters: helping you stay organized with simple, reliable checklists. No internet needed, no accounts to manage, just you and your tasks.
+**Why Checkly Lists?**
+In a world of complex apps with unnecessary features, Checkly Lists focuses on what matters: helping you stay organized with simple, reliable checklists. No internet needed, no accounts to manage, just you and your tasks.
 
-Download Checkly today and experience the simplicity of focused productivity.
+Download Checkly Lists today and experience the simplicity of focused productivity.
 
 ---
 
 **Privacy & Permissions:**
-- No internet required
-- No permissions requested
-- No data collection
-- All data stored locally on your device
+- ✅ No internet required
+- ✅ Minimal permissions (notifications only)
+- ✅ No data collection or tracking
+- ✅ No ads or analytics
+- ✅ All data stored locally on your device
+- ✅ GDPR and CCPA compliant
 
 **Support:**
 For questions or support, contact: masteyesseeds@gmail.com
 
----
+**Developed by:** MAST EYES SEEDS PRIVATE LIMITED
 
-*Developed by MAST EYES SEEDS PRIVATE LIMITED*
+---
 
 ## Category
 **Tools / Productivity**
@@ -72,32 +75,45 @@ For questions or support, contact: masteyesseeds@gmail.com
 - minimal
 - daily tasks
 - task manager
+- to-do list
 - reminder
-- notes
+- checklist app
+- offline app
 
 ## Content Rating
-**Everyone** - The app contains no objectionable content and is suitable for all ages.
+**Everyone** - The app contains no objectionable content and is suitable for all ages. It does not include violence, mature themes, or inappropriate language.
 
 ## Screenshots Requirements
 
 You'll need to create screenshots for the following:
 
-1. **Phone Screenshots (Required):**
+1. **Phone Screenshots (Required - minimum 2, recommended 4-5):**
    - Home screen showing grid of checklists
-   - Checklist detail view with items
-   - Settings screen
-   - Empty state (optional)
-   - Dark mode view (optional)
+   - Checklist detail view with completed and uncompleted items
+   - Dark mode view of home screen
+   - Settings or preferences screen (optional)
 
-2. **Tablet Screenshots (Optional but recommended):**
+2. **Tablet Screenshots (Optional but recommended for better visibility):**
    - Same as phone but showing tablet layout
 
 3. **Feature Graphic (1024 x 500 pixels):**
-   - App icon/logo with tagline
-   - "Simple, Offline Checklists" or similar
+   - "Checkly Lists" with tagline
+   - "Simple Offline Checklists" or "Organize Your Tasks Offline"
 
-## App Icon
-- Already configured from `assets/icon.png`
+4. **Icon:**
+   - Already configured from `assets/icon.png` (1024x1024)
+
+## Play Store Requirements Checklist
+
+- [x] App name compliant with Play Store policies
+- [x] Description is clear, accurate, and promotional
+- [x] Privacy policy link will be provided
+- [x] Content rating questionnaire completed
+- [x] No restricted content
+- [x] App icon follows guidelines
+- [x] Version number set (1.0.0)
+- [x] Target SDK 34 (compliant with Play Store requirements)
+
 - Will be automatically generated for all densities
 
 ## Promotional Text (400 characters max)

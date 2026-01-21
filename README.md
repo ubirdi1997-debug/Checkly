@@ -1,4 +1,4 @@
-# Checkly
+# Checkly Lists
 
 A simple, offline-first checklist app focused on reusable lists, daily routines, and clarity.
 
@@ -65,7 +65,7 @@ The signing configuration is in `android/key.properties` and uses the keystore a
 
 ## Permissions
 
-This app requires **NO permissions** - it's completely offline and stores all data locally.
+This app requires **minimal permissions** - only POST_NOTIFICATIONS for checklist reminders. It's completely offline and stores all data locally.
 
 ## License
 
