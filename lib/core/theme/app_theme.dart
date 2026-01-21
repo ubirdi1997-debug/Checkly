@@ -41,7 +41,7 @@ class AppTheme {
         elevation: 0,
         centerTitle: false,
         backgroundColor: backgroundColor,
-        foregroundColor: colorScheme.onBackground,
+        foregroundColor: colorScheme.onSurface,
       ),
       listTileTheme: ListTileThemeData(
         shape: RoundedRectangleBorder(
@@ -79,7 +79,7 @@ class AppTheme {
         elevation: 0,
         centerTitle: false,
         backgroundColor: darkBackgroundColor,
-        foregroundColor: colorScheme.onBackground,
+        foregroundColor: colorScheme.onSurface,
       ),
       listTileTheme: ListTileThemeData(
         shape: RoundedRectangleBorder(

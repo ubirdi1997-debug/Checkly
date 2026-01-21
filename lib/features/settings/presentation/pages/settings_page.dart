@@ -100,22 +100,22 @@ class SettingsPage extends ConsumerWidget {
                     ],
                   ),
                 ),
-                ListTile(
-                  leading: const Icon(Icons.business),
-                  title: const Text('Company Name'),
-                  subtitle: const Text('MAST EYES SEEDS PRIVATE LIMITED'),
+                const ListTile(
+                  leading: Icon(Icons.business),
+                  title: Text('Company Name'),
+                  subtitle: Text('MAST EYES SEEDS PRIVATE LIMITED'),
                 ),
                 const Divider(height: 1),
-                ListTile(
-                  leading: const Icon(Icons.email),
-                  title: const Text('Support Email'),
-                  subtitle: const Text('masteyesseeds.com'),
+                const ListTile(
+                  leading: Icon(Icons.email),
+                  title: Text('Support Email'),
+                  subtitle: Text('masteyesseeds.com'),
                 ),
                 const Divider(height: 1),
-                ListTile(
-                  leading: const Icon(Icons.phone),
-                  title: const Text('Phone'),
-                  subtitle: const Text('+91 98141 42214'),
+                const ListTile(
+                  leading: Icon(Icons.phone),
+                  title: Text('Phone'),
+                  subtitle: Text('+91 98141 42214'),
                 ),
               ],
             ),

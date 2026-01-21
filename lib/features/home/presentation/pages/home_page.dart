@@ -210,7 +210,7 @@ class _HomePageState extends ConsumerState<HomePage> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => SettingsPage()),
+                MaterialPageRoute(builder: (context) => const SettingsPage()),
               );
             },
             tooltip: 'Settings',

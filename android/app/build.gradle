@@ -31,8 +31,8 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace "com.minormend.checkly"
-    compileSdk 34
+    namespace "com.checkly.app"
+    compileSdk 36
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -49,11 +49,20 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.minormend.checkly"
+        applicationId "com.checkly.app"
         minSdkVersion flutter.minSdkVersion
-        targetSdk 34
+        targetSdk 36
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+    }
+
+    aaptOptions {
+        noCompress 'webp'
+    }
+
+    packagingOptions {
+        pickFirst 'lib/arm64-v8a/libc++_shared.so'
+        pickFirst 'lib/x86_64/libc++_shared.so'
     }
 
     signingConfigs {

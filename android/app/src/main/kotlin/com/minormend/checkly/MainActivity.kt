@@ -1,4 +1,4 @@
-package com.minormend.checkly
+package com.checkly.app
 
 import io.flutter.embedding.android.FlutterActivity
 

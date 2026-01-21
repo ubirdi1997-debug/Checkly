@@ -1,7 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 import '../../../../core/data/models/checklist.dart';
-import '../../../../core/data/models/checklist_item.dart';
 import '../../../../core/data/storage/checklist_storage.dart';
 
 final checklistListProvider = StateNotifierProvider<ChecklistListNotifier, List<Checklist>>((ref) {

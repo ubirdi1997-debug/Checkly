@@ -95,9 +95,9 @@ class _ChecklistItemTileState extends State<ChecklistItemTile>
           color: theme.colorScheme.error,
           borderRadius: BorderRadius.circular(12),
         ),
-        child: Row(
+        child: const Row(
           mainAxisAlignment: MainAxisAlignment.end,
-          children: const [
+          children: [
             Icon(Icons.delete, color: Colors.white),
             SizedBox(width: 8),
             Text(
@@ -222,7 +222,7 @@ class _ChecklistItemTileState extends State<ChecklistItemTile>
                             ? () async {
                                 final result = await showDialog<DateTime?>(
                                   context: context,
-                                  builder: (context) => ReminderTimePickerDialog(),
+                                  builder: (context) => const ReminderTimePickerDialog(),
                                 );
                                 if (widget.onReminderSet != null) {
                                   widget.onReminderSet!(result);
